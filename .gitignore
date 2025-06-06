@@ -13,9 +13,9 @@ frontend/.yarn/unplugged
 frontend/.yarn/build-state.yml
 frontend/.yarnrc.yml
 
-# Build artifacts
-frontend/build/
+# Vite build artifacts
 frontend/dist/
+frontend/dist-ssr/
 
 # Logs and temporary files
 *.log
