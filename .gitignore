@@ -59,3 +59,5 @@ docs/.doctrees/
 
 #db
 backend/instance/*.db
+backend/**/*.db
+backend/*.db
