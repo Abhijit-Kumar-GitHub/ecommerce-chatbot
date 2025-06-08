@@ -1,17 +1,18 @@
 # ecommerce-chatbot/backend/models.py
-from sqlalchemy import Column, Integer, String, Float, Text, DateTime, ForeignKey
 from datetime import datetime
 from db import db
+
+
 
 class Product(db.Model):
     __tablename__ = 'products'
 
-    id = Column(Integer, primary_key=True)
-    name = Column(String)
-    description = Column(String)
-    price = Column(Float)
-    category = Column(String)
-
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String)
+    description = db.Column(db.String)
+    price = db.Column(db.Float)
+    category = db.Column(db.String)
+    image_url = db.Column(db.String)
     
 
 

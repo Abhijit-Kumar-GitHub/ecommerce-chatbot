@@ -1,51 +1,43 @@
 # ecommerce-chatbot/backend/db_init.py
 
 import json
-from sqlalchemy import create_engine, Column, Integer, String, Float
-from sqlalchemy.orm import declarative_base, sessionmaker
-
+from db import db
 from models import Product
+from flask import Flask
 
-# Define SQLite DB path
+# Path to your products JSON file
+PRODUCTS_JSON_PATH = "../products/products.json"
+
+# Path to your SQLite database
 DB_PATH = "sqlite:///products.db"
 
-# SQLAlchemy setup
-Base = declarative_base()
-
-# class Product(Base):                                  #commnented as now we have defined the class Product in models.py
-#     __tablename__ = 'products'
-
-#     id = Column(Integer, primary_key=True)
-#     name = Column(String)
-#     description = Column(String)
-#     price = Column(Float)
-#     category = Column(String)
-
-# Create engine and session
-engine = create_engine(DB_PATH)
-Session = sessionmaker(bind=engine)
-session = Session()
+app = Flask(__name__)
+app.config["SQLALCHEMY_DATABASE_URI"] = DB_PATH
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+db.init_app(app)
 
 def load_products(json_file):
     with open(json_file, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    # Clear old and create new table
-    Base.metadata.drop_all(engine)
-    Base.metadata.create_all(engine)
+    with app.app_context():
+        # Drop and recreate all tables
+        db.drop_all()
+        db.create_all()
 
-    for item in data:
-        product = Product(
-            id=item["id"],
-            name=item["name"],
-            description=item["description"],
-            price=item["price"],
-            category=item["category"]
-        )
-        session.add(product)
+        for item in data:
+            product = Product(
+                id=item["id"],
+                name=item["name"],
+                description=item["description"],
+                price=item["price"],
+                category=item["category"],
+                image_url=item.get("image")  # Map JSON "image" to DB "image_url"
+            )
+            db.session.add(product)
 
-    session.commit()
-    print(f"Loaded {len(data)} products into the database.")
+        db.session.commit()
+        print(f"Loaded {len(data)} products into the database.")
 
 if __name__ == "__main__":
-    load_products("../products/products.json")
+    load_products(PRODUCTS_JSON_PATH)
