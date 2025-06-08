@@ -58,4 +58,4 @@ docs/.doctrees/
 
 
 #db
-backend/instance/*
+backend/instance/*.db
