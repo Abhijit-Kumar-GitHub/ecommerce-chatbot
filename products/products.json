@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Sony WH-1000XM4 Headphones",
+    "description": "Wireless noise-canceling over-ear headphones with 30 hours of battery life.",
+    "price": 19999,
+    "category": "headphones"
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy Tab S9",
+    "description": "11-inch AMOLED display tablet with Snapdragon 8 Gen 2 and 8GB RAM.",
+    "price": 57999,
+    "category": "tablet"
+  },
+  {
+    "id": 3,
+    "name": "Apple iPhone 14",
+    "description": "6.1-inch OLED display with A15 Bionic chip and dual-camera system.",
+    "price": 69999,
+    "category": "smartphone"
+  },
+  {
+    "id": 4,
+    "name": "boAt Rockerz 255 Pro+",
+    "description": "Bluetooth wireless in-ear earphones with 40 hours playback and fast charge.",
+    "price": 1499,
+    "category": "earphones"
+  },
+  {
+    "id": 5,
+    "name": "Dell Inspiron 15 Laptop",
+    "description": "15.6-inch FHD display with Intel i5 12th Gen, 8GB RAM, and 512GB SSD.",
+    "price": 52990,
+    "category": "laptop"
+  },
+  {
+    "id": 6,
+    "name": "Realme Smart TV 43\"",
+    "description": "Android TV with FHD resolution, Dolby Audio, and built-in Chromecast.",
+    "price": 23999,
+    "category": "television"
+  },
+  {
+    "id": 7,
+    "name": "Canon EOS 200D DSLR",
+    "description": "24.1MP APS-C camera with dual pixel autofocus and WiFi/Bluetooth support.",
+    "price": 48990,
+    "category": "camera"
+  },
+  {
+    "id": 8,
+    "name": "JBL Flip 6 Speaker",
+    "description": "Portable waterproof Bluetooth speaker with 12 hours of battery life.",
+    "price": 8499,
+    "category": "speaker"
+  },
+  {
+    "id": 9,
+    "name": "TP-Link Archer AX10",
+    "description": "Dual-band WiFi 6 router with 1.5GHz triple-core CPU and 1.2Gbps speed.",
+    "price": 3499,
+    "category": "router"
+  },
+  {
+    "id": 10,
+    "name": "Mi Smart Band 7",
+    "description": "1.62\" AMOLED fitness tracker with SpO2, heart rate, and sleep monitoring.",
+    "price": 2999,
+    "category": "wearable"
+  }
+]
