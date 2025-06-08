@@ -1,38 +1,77 @@
-
 import os
-import requests
 from flask import Blueprint, request, jsonify
+from functools import wraps
+import jwt
+from models import ChatSession, ChatMessage
+from db import db
+from datetime import datetime
+import requests
+from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
-from dotenv import load_dotenv
-from datetime import datetime
-from db import db
-from models import Conversation
 
 load_dotenv()
 
-chat_bp = Blueprint('chat', __name__, url_prefix='/chat')
+chat_bp = Blueprint("chat", __name__)
 
-# --------- Config ---------
+# Config
 CHROMA_PERSIST_DIR = "../products/chroma/"
 EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_MODEL = "deepseek/deepseek-chat"
-# --------------------------
+JWT_SECRET = os.getenv("JWT_SECRET_KEY")
 
 embedding_function = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
 vectorstore = Chroma(persist_directory=CHROMA_PERSIST_DIR, embedding_function=embedding_function)
 
-@chat_bp.route('/message', methods=['POST'])
-def chat():
+def token_required(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        token = None
+        # JWT token from Authorization header: "Bearer <token>"
+        auth_header = request.headers.get("Authorization")
+        if auth_header and auth_header.startswith("Bearer "):
+            token = auth_header.split(" ")[1]
+
+        if not token:
+            return jsonify({"error": "Token is missing"}), 401
+
+        try:
+            data = jwt.decode(token, JWT_SECRET, algorithms=["HS256"])
+            current_user_id = data["user_id"]
+        except Exception as e:
+            return jsonify({"error": "Token is invalid", "details": str(e)}), 401
+
+        return f(current_user_id, *args, **kwargs)
+    return decorated
+
+@chat_bp.route("/chat", methods=["POST"])
+@token_required
+def chat(current_user_id):
     data = request.get_json()
-    user_id = data.get('user_id')
-    user_query = data.get('query')
+    user_query = data.get("query", "")
 
-    if not user_id or not user_query:
-        return jsonify({"error": "user_id and query are required"}), 400
+    if not user_query:
+        return jsonify({"error": "Query not provided"}), 400
 
-    # Vector search for relevant product info
+    # Find or create chat session
+    session = ChatSession.query.filter_by(user_id=current_user_id).first()
+    if not session:
+        session = ChatSession(user_id=current_user_id)
+        db.session.add(session)
+        db.session.commit()
+
+    # Save user message
+    user_msg = ChatMessage(
+        session_id=session.id,
+        sender="user",
+        content=user_query,
+        timestamp=datetime.utcnow()
+    )
+    db.session.add(user_msg)
+    db.session.commit()
+
+    # Vector search for relevant product context
     relevant_docs = vectorstore.similarity_search(user_query, k=4)
     context = "\n".join([doc.page_content for doc in relevant_docs])
 
@@ -62,30 +101,19 @@ AI:"""
     try:
         response = requests.post("https://openrouter.ai/api/v1/chat/completions", headers=headers, json=payload)
         response.raise_for_status()
-    except requests.exceptions.RequestException as e:
-        return jsonify({"error": "Failed to contact OpenRouter", "details": str(e)}), 500
+        ai_reply = response.json()["choices"][0]["message"]["content"]
 
-    ai_reply = response.json()["choices"][0]["message"]["content"]
+        # Save AI response
+        ai_msg = ChatMessage(
+            session_id=session.id,
+            sender="ai",
+            content=ai_reply,
+            timestamp=datetime.utcnow()
+        )
+        db.session.add(ai_msg)
+        db.session.commit()
 
-    # Save conversation to DB
-    conv = Conversation(
-        user_id=user_id,
-        user_message=user_query,
-        bot_response=ai_reply,
-        timestamp=datetime.utcnow()
-    )
-    db.session.add(conv)
-    db.session.commit()
+        return jsonify({"response": ai_reply})
 
-    return jsonify({
-        "id": conv.id,
-        "response": ai_reply,
-        "timestamp": conv.timestamp.isoformat()
-    })
-
-
-@chat_bp.route('/history/<user_id>', methods=['GET'])
-def get_history(user_id):
-    conversations = Conversation.query.filter_by(user_id=user_id).order_by(Conversation.timestamp.asc()).all()
-    history = [conv.to_dict() for conv in conversations]
-    return jsonify({"history": history})
+    except requests.RequestException as e:
+        return jsonify({"error": "OpenRouter API failed", "details": str(e)}), 500

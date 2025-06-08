@@ -1,11 +1,11 @@
-from sqlalchemy.orm import declarative_base
-from sqlalchemy import Column, Integer, String, Float
+# from sqlalchemy.orm import declarative_base
+from sqlalchemy import Column, Integer, String, Float, Text, DateTime, ForeignKey
 from datetime import datetime
 from db import db
 
-Base = declarative_base()
+# Base = declarative_base()
 
-class Product(Base):
+class Product(db.Model):
     __tablename__ = 'products'
 
     id = Column(Integer, primary_key=True)
@@ -16,20 +16,54 @@ class Product(Base):
 
 
 
-class Conversation(db.Model):
-    __tablename__ = "conversations"
+# class Conversation(db.Model):
+#     __tablename__ = "conversations"
 
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    user_id = db.Column(db.String, nullable=False, index=True)
-    user_message = db.Column(db.Text, nullable=False)
-    bot_response = db.Column(db.Text, nullable=False)
-    timestamp = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
+#     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+#     user_id = db.Column(db.String, nullable=False, index=True)
+#     user_message = db.Column(db.Text, nullable=False)
+#     bot_response = db.Column(db.Text, nullable=False)
+#     timestamp = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
 
-    def to_dict(self):
-        return {
-            "id": self.id,
-            "user_id": self.user_id,
-            "user_message": self.user_message,
-            "bot_response": self.bot_response,
-            "timestamp": self.timestamp.isoformat()
-        }
+#     def to_dict(self):
+#         return {
+#             "id": self.id,
+#             "user_id": self.user_id,
+#             "user_message": self.user_message,
+#             "bot_response": self.bot_response,
+#             "timestamp": self.timestamp.isoformat()
+#         }
+    
+
+
+    
+class User(db.Model):
+    __tablename__ = "users"
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    password = db.Column(db.String(200), nullable=False)
+    created_at = db.Column(db.DateTime, server_default=db.func.now())
+    
+
+
+
+
+class ChatSession(db.Model):
+    __tablename__ = "chat_sessions"
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+    messages = db.relationship("ChatMessage", backref="session", lazy=True, cascade="all, delete")
+
+
+
+
+
+class ChatMessage(db.Model):
+    __tablename__ = "chat_messages"
+    id = db.Column(db.Integer, primary_key=True)
+    session_id = db.Column(db.Integer, db.ForeignKey("chat_sessions.id"), nullable=False)
+    sender = db.Column(db.String(10))  # 'user' or 'ai'
+    content = db.Column(db.Text, nullable=False)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
