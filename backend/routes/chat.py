@@ -24,11 +24,11 @@ JWT_SECRET = os.getenv("JWT_SECRET_KEY")
 embedding_function = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
 vectorstore = Chroma(persist_directory=CHROMA_PERSIST_DIR, embedding_function=embedding_function)
 
+# ---------------- Token Check ----------------
 def token_required(f):
     @wraps(f)
     def decorated(*args, **kwargs):
         token = None
-        # JWT token from Authorization header: "Bearer <token>"
         auth_header = request.headers.get("Authorization")
         if auth_header and auth_header.startswith("Bearer "):
             token = auth_header.split(" ")[1]
@@ -45,21 +45,28 @@ def token_required(f):
         return f(current_user_id, *args, **kwargs)
     return decorated
 
+# ---------------- Chat API ----------------
 @chat_bp.route("/chat", methods=["POST"])
 @token_required
 def chat(current_user_id):
     data = request.get_json()
     user_query = data.get("query", "")
+    session_id = data.get("session_id")
 
     if not user_query:
         return jsonify({"error": "Query not provided"}), 400
 
-    # Find or create chat session
-    session = ChatSession.query.filter_by(user_id=current_user_id).first()
-    if not session:
-        session = ChatSession(user_id=current_user_id)
-        db.session.add(session)
-        db.session.commit()
+    # Use provided session or get latest
+    if session_id:
+        session = ChatSession.query.filter_by(id=session_id, user_id=current_user_id).first()
+        if not session:
+            return jsonify({"error": "Invalid session ID"}), 404
+    else:
+        session = ChatSession.query.filter_by(user_id=current_user_id).order_by(ChatSession.created_at.desc()).first()
+        if not session:
+            session = ChatSession(user_id=current_user_id)
+            db.session.add(session)
+            db.session.commit()
 
     # Save user message
     user_msg = ChatMessage(
@@ -71,7 +78,7 @@ def chat(current_user_id):
     db.session.add(user_msg)
     db.session.commit()
 
-    # Vector search for relevant product context
+    # Vector search
     relevant_docs = vectorstore.similarity_search(user_query, k=4)
     context = "\n".join([doc.page_content for doc in relevant_docs])
 
@@ -113,7 +120,57 @@ AI:"""
         db.session.add(ai_msg)
         db.session.commit()
 
-        return jsonify({"response": ai_reply})
+        return jsonify({
+            "response": ai_reply,
+            "session_id": session.id
+        })
 
     except requests.RequestException as e:
         return jsonify({"error": "OpenRouter API failed", "details": str(e)}), 500
+
+# ---------------- Reset Chat Session ----------------
+@chat_bp.route("/chat/reset", methods=["POST"])
+@token_required
+def reset_chat(current_user_id):
+    new_session = ChatSession(user_id=current_user_id)
+    db.session.add(new_session)
+    db.session.commit()
+
+    return jsonify({
+        "message": "New chat session started",
+        "session_id": new_session.id,
+        "created_at": new_session.created_at
+    }), 201
+
+# ---------------- List All Sessions ----------------
+@chat_bp.route("/chat/sessions", methods=["GET"])
+@token_required
+def get_sessions(current_user_id):
+    sessions = ChatSession.query.filter_by(user_id=current_user_id).order_by(ChatSession.created_at.desc()).all()
+    result = [
+        {
+            "session_id": s.id,
+            "created_at": s.created_at
+        }
+        for s in sessions
+    ]
+    return jsonify(result), 200
+
+# ---------------- Get Messages by Session ----------------
+@chat_bp.route("/chat/messages/<int:session_id>", methods=["GET"])
+@token_required
+def get_chat_messages(current_user_id, session_id):
+    session = ChatSession.query.filter_by(id=session_id, user_id=current_user_id).first()
+    if not session:
+        return jsonify({"error": "Session not found"}), 404
+
+    messages = ChatMessage.query.filter_by(session_id=session.id).order_by(ChatMessage.timestamp).all()
+    result = [
+        {
+            "sender": msg.sender,
+            "content": msg.content,
+            "timestamp": msg.timestamp
+        }
+        for msg in messages
+    ]
+    return jsonify(result), 200
