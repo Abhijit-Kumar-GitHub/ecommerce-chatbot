@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: ecommerce-chatbot-backend
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: JWT_SECRET_KEY
+        value: c3e37411dfba116788bc0c17f229b5b5829885d22853e4bf93fef1dfa97a6901
+      - key: DATABASE_URL
+        value: sqlite:///products.db
+      - key: OPENROUTER_API_KEY
+        value: your_openrouter_key
+
+
+
+OPENROUTER_API_KEY=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
+DATABASE_URL=sqlite:///ecommerce_chatbot.db
+JWT_SECRET_KEY=
