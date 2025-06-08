@@ -1,4 +1,5 @@
 import os
+import gc  # Add garbage collection
 from flask import Blueprint, request, jsonify
 from functools import wraps
 import jwt
@@ -21,8 +22,19 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_MODEL = "deepseek/deepseek-chat"
 JWT_SECRET = os.getenv("JWT_SECRET_KEY")
 
-embedding_function = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
-vectorstore = Chroma(persist_directory=CHROMA_PERSIST_DIR, embedding_function=embedding_function)
+# Load embedding model and vector store only when needed
+vectorstore = None
+embedding_function = None
+
+def get_vectorstore():
+    global vectorstore, embedding_function
+    if vectorstore is None:
+        print("Initializing embedding model and vectorstore...")
+        embedding_function = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
+        vectorstore = Chroma(persist_directory=CHROMA_PERSIST_DIR, embedding_function=embedding_function)
+    return vectorstore
+
+
 
 # ---------------- Token Check ----------------
 def token_required(f):

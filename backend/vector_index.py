@@ -1,10 +1,10 @@
-# ecommerce-chatbot/backend/vector_index.py
 import os
 import json
+import gc  # Add garbage collection
 from pathlib import Path
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_core.documents import Document
-from langchain_huggingface import HuggingFaceEmbeddings  # Updated import
+from langchain_huggingface import HuggingFaceEmbeddings
 
 # --------- Config ---------
 PRODUCTS_JSON_PATH = "../products/products.json"
@@ -33,5 +33,8 @@ vectorstore = Chroma.from_documents(
     embedding=embedding_function,
     persist_directory=CHROMA_PERSIST_DIR
 )
+
+# Force garbage collection
+gc.collect()
 
 print(f"Vectorstore created and saved to {CHROMA_PERSIST_DIR}")
