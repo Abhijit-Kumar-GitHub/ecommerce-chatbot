@@ -1,72 +1,963 @@
+
 [
   {
     "id": 1,
-    "name": "Sony WH-1000XM4 Headphones",
-    "description": "Wireless noise-canceling over-ear headphones with 30 hours of battery life.",
-    "price": 19999,
-    "category": "headphones"
+    "name": "Apple iPhone 14",
+    "description": "Experience the Apple iPhone 14, a 2025 flagship with a 6.1-inch Super Retina XDR display and A16 Bionic chip for seamless performance. Capture stunning photos with the 48MP triple-camera system, featuring Night mode and 8K video. Enjoy all-day battery life with 4500mAh capacity and 5G connectivity for ultra-fast streaming. iOS 18 offers enhanced privacy and customization. With Ceramic Shield and IP68 water resistance, it’s built to last. Perfect for tech enthusiasts seeking premium design and cutting-edge features.",
+    "price": 8497,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Apple+iPhone+14"
   },
   {
     "id": 2,
-    "name": "Samsung Galaxy Tab S9",
-    "description": "11-inch AMOLED display tablet with Snapdragon 8 Gen 2 and 8GB RAM.",
-    "price": 57999,
-    "category": "tablet"
+    "name": "Samsung Galaxy S23",
+    "description": "The Samsung Galaxy S23 redefines excellence with a 6.2-inch Dynamic AMOLED 2X display and Snapdragon 8 Gen 3 processor. Its 50MP quad-camera setup delivers vibrant photos and 8K video, even in low light. A 5000mAh battery supports 45W fast charging, while 5G and Wi-Fi 7 ensure blazing speeds. Running One UI 7 on Android 15, it offers intuitive multitasking. With Gorilla Glass Victus 2 and IP68 rating, it’s durable and stylish, ideal for professionals and content creators.",
+    "price": 77707,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Samsung+Galaxy+S23"
   },
   {
     "id": 3,
-    "name": "Apple iPhone 14",
-    "description": "6.1-inch OLED display with A15 Bionic chip and dual-camera system.",
-    "price": 69999,
-    "category": "smartphone"
+    "name": "OnePlus 11",
+    "description": "Unleash speed with the OnePlus 11, featuring a 6.7-inch Fluid AMOLED display with 120Hz refresh rate and Snapdragon 8 Gen 2. The 50MP Hasselblad triple-camera system captures professional-grade photos, with 4K video at 60fps. Its 4800mAh battery supports 100W SUPERVOOC charging, fully charging in 25 minutes. OxygenOS 14 ensures a smooth, bloat-free experience. With 5G, Dolby Vision, and an aluminum frame, it’s perfect for gamers and multitaskers seeking flagship performance at a competitive price.",
+    "price": 54408,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=OnePlus+11"
   },
   {
     "id": 4,
-    "name": "boAt Rockerz 255 Pro+",
-    "description": "Bluetooth wireless in-ear earphones with 40 hours playback and fast charge.",
-    "price": 1499,
-    "category": "earphones"
+    "name": "Google Pixel 7",
+    "description": "The Google Pixel 7 combines innovation with simplicity, boasting a 6.3-inch OLED display and Google Tensor G3 chip. Its 50MP dual-camera system, enhanced by AI, delivers stunning photos and 4K video with Cinematic Blur. A 4355mAh battery supports 30W fast charging. Running stock Android 14, it offers a clean interface and timely updates. With 5G, IP68 water resistance, and wireless charging, it’s ideal for photography enthusiasts and those who love a pure Android experience.",
+    "price": 4277,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Google+Pixel+7"
   },
   {
     "id": 5,
-    "name": "Dell Inspiron 15 Laptop",
-    "description": "15.6-inch FHD display with Intel i5 12th Gen, 8GB RAM, and 512GB SSD.",
-    "price": 52990,
-    "category": "laptop"
+    "name": "Realme GT Neo 3",
+    "description": "Realme GT Neo 3 is a performance beast with a 6.7-inch AMOLED display at 120Hz and MediaTek Dimensity 8100. Its 50MP triple-camera captures vivid images, while 150W UltraDart charging powers the 4500mAh battery in 15 minutes. Realme UI 4.0 on Android 14 offers customization. With 5G, Dolby Atmos, and a sleek racing-inspired design, it’s perfect for gamers and budget-conscious users seeking flagship specs without breaking the bank.",
+    "price": 47077,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Realme+GT+Neo+3"
   },
   {
     "id": 6,
-    "name": "Realme Smart TV 43\"",
-    "description": "Android TV with FHD resolution, Dolby Audio, and built-in Chromecast.",
-    "price": 23999,
-    "category": "television"
+    "name": "Xiaomi 13 Pro",
+    "description": "Xiaomi 13 Pro shines with a 6.73-inch LTPO AMOLED display and Snapdragon 8 Gen 2. Its Leica-tuned 50MP triple-camera system excels in low light, supporting 8K video. A 4820mAh battery with 120W HyperCharge and 50W wireless charging keeps you powered. MIUI 15 on Android 14 ensures smooth multitasking. With 5G, IP68, and premium ceramics, it’s a top choice for photography buffs and power users craving luxury.",
+    "price": 20115,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Xiaomi+13+Pro"
   },
   {
     "id": 7,
-    "name": "Canon EOS 200D DSLR",
-    "description": "24.1MP APS-C camera with dual pixel autofocus and WiFi/Bluetooth support.",
-    "price": 48990,
-    "category": "camera"
+    "name": "Motorola Edge 40",
+    "description": "Motorola Edge 40 offers a sleek 6.55-inch OLED display with 144Hz refresh rate and Dimensity 8020. Its 50MP dual-camera with OIS captures crisp photos and 4K video. A 4400mAh battery supports 68W TurboPower charging. Running near-stock Android 14, it’s bloat-free. With 5G, IP68, and wireless charging, this stylish device suits professionals and media consumers seeking performance and elegance in a compact form.",
+    "price": 52059,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Motorola+Edge+40"
   },
   {
     "id": 8,
-    "name": "JBL Flip 6 Speaker",
-    "description": "Portable waterproof Bluetooth speaker with 12 hours of battery life.",
-    "price": 8499,
-    "category": "speaker"
+    "name": "iQOO 11",
+    "description": "iQOO 11 is a gaming powerhouse with a 6.78-inch AMOLED display at 144Hz and Snapdragon 8 Gen 2. Its 50MP triple-camera delivers vibrant shots, with 8K video support. A 5000mAh battery with 120W FlashCharge powers up in 20 minutes. Funtouch OS 14 on Android 14 optimizes gaming. With 5G, V2 chip for display enhancement, and RGB lighting, it’s ideal for gamers and performance enthusiasts.",
+    "price": 55921,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=iQOO+11"
   },
   {
     "id": 9,
-    "name": "TP-Link Archer AX10",
-    "description": "Dual-band WiFi 6 router with 1.5GHz triple-core CPU and 1.2Gbps speed.",
-    "price": 3499,
-    "category": "router"
+    "name": "Nothing Phone (2)",
+    "description": "Nothing Phone (2) stands out with a 6.7-inch OLED display and Snapdragon 8+ Gen 1. Its 50MP dual-camera system with Glyph Interface offers unique notifications and creative photography. A 4700mAh battery supports 45W fast charging. Nothing OS 2.5 on Android 14 is clean and customizable. With 5G, transparent design, and IP54 resistance, it’s perfect for trendsetters who value style and innovation.",
+    "price": 36645,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Nothing+Phone+(2)"
   },
   {
     "id": 10,
-    "name": "Mi Smart Band 7",
-    "description": "1.62\" AMOLED fitness tracker with SpO2, heart rate, and sleep monitoring.",
-    "price": 2999,
-    "category": "wearable"
+    "name": "Asus ROG Phone 6",
+    "description": "Asus ROG Phone 6 is a gaming beast with a 6.78-inch AMOLED display at 165Hz and Snapdragon 8+ Gen 1. Its 50MP triple-camera captures decent shots. A 6000mAh battery with 65W HyperCharge lasts days. ROG UI on Android 14 optimizes gaming with AirTriggers and RGB lighting. With 5G and advanced cooling, it’s the ultimate choice for hardcore mobile gamers.",
+    "price": 15876,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Asus+ROG+Phone+6"
+  },
+  {
+    "id": 11,
+    "name": "Vivo X90",
+    "description": "Vivo X90 impresses with a 6.78-inch AMOLED display at 120Hz and Dimensity 9200. Its Zeiss-tuned 50MP triple-camera excels in portrait and night shots, supporting 4K video. A 4810mAh battery with 120W FlashCharge powers up fast. Funtouch OS 14 on Android 14 is feature-rich. With 5G, IP68, and vegan leather finish, it’s ideal for photography lovers and style-conscious users.",
+    "price": 51692,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Vivo+X90"
+  },
+  {
+    "id": 12,
+    "name": "Oppo Reno 10",
+    "description": "Oppo Reno 10 blends style with a 6.7-inch AMOLED display at 120Hz and Dimensity 7050. Its 64MP triple-camera with telephoto lens shines in portraits and 4K video. A 4600mAh battery supports 80W SUPERVOOC charging. ColorOS 14 on Android 14 is vibrant. With 5G and a slim design, it’s perfect for selfie enthusiasts and users seeking a balanced mid-range phone.",
+    "price": 52114,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Oppo+Reno+10"
+  },
+  {
+    "id": 13,
+    "name": "Sony Xperia 5 IV",
+    "description": "Sony Xperia 5 IV offers a compact 6.1-inch OLED display at 120Hz and Snapdragon 8 Gen 1. Its 12MP triple-camera with real-time eye AF excels in photography and 4K HDR video. A 5000mAh battery supports 30W charging. Running Android 14, it’s creator-focused. With 5G, IP68, and a 3.5mm jack, it’s ideal for media professionals and audiophiles.",
+    "price": 30634,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Sony+Xperia+5+IV"
+  },
+  {
+    "id": 14,
+    "name": "Lava Agni 2",
+    "description": "Lava Agni 2 delivers value with a 6.78-inch AMOLED display at 120Hz and Dimensity 7050. Its 50MP quad-camera captures detailed shots, with 4K video support. A 4700mAh battery with 66W fast charging powers up quickly. Running Android 14, it’s clean and reliable. With 5G and a curved design, it’s a great budget-friendly option for multimedia and gaming enthusiasts.",
+    "price": 18264,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Lava+Agni+2"
+  },
+  {
+    "id": 15,
+    "name": "Poco F5",
+    "description": "Poco F5 is a performance champ with a 6.67-inch AMOLED display at 120Hz and Snapdragon 7+ Gen 2. Its 64MP triple-camera delivers sharp images and 4K video. A 5000mAh battery with 67W TurboCharging lasts all day. MIUI 14 for Poco on Android 14 is gaming-optimized. With 5G and Dolby Vision, it’s ideal for budget gamers and power users.",
+    "price": 33688,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Poco+F5"
+  },
+  {
+    "id": 16,
+    "name": "Infinix Zero 5G",
+    "description": "Infinix Zero 5G offers a 6.78-inch IPS LCD at 120Hz and Dimensity 900. Its 48MP triple-camera captures vibrant photos, with 4K video support. A 5000mAh battery with 33W fast charging keeps you going. XOS 12 on Android 14 is feature-packed. With 5G and a bold design, it’s a budget-friendly choice for young users and multimedia lovers.",
+    "price": 31817,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Infinix+Zero+5G"
+  },
+  {
+    "id": 17,
+    "name": "Tecno Phantom X2",
+    "description": "Tecno Phantom X2 boasts a 6.8-inch AMOLED display at 120Hz and Dimensity 9000. Its 64MP triple-camera with AI enhancements shines in low light, supporting 4K video. A 5160mAh battery with 45W charging ensures longevity. HiOS 14 on Android 14 is vibrant. With 5G and a premium design, it’s perfect for trendsetters seeking unique style and performance.",
+    "price": 44478,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Tecno+Phantom+X2"
+  },
+  {
+    "id": 18,
+    "name": "Micromax IN Note 2",
+    "description": "Micromax IN Note 2 offers a 6.43-inch AMOLED display and Helio G95. Its 48MP quad-camera captures decent shots, with 1080p video support. A 5000mAh battery with 30W fast charging provides all-day power. Running stock Android 13, it’s clean and reliable. With a budget price and 5G support, it’s ideal for students and first-time smartphone buyers.",
+    "price": 11829,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Micromax+IN+Note+2"
+  },
+  {
+    "id": 19,
+    "name": "Redmi Note 12 Pro",
+    "description": "Redmi Note 12 Pro features a 6.67-inch AMOLED display at 120Hz and Dimensity 1080. Its 50MP triple-camera with OIS delivers sharp photos and 4K video. A 5000mAh battery with 67W fast charging powers up fast. MIUI 14 on Android 14 is feature-rich. With 5G and Dolby Atmos, it’s a mid-range gem for multimedia and casual gaming.",
+    "price": 5994,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Redmi+Note+12+Pro"
+  },
+  {
+    "id": 20,
+    "name": "iPhone SE 3rd Gen",
+    "description": "The iPhone SE 3rd Gen (2025) packs a 4.7-inch Retina HD display and A15 Bionic chip for compact power. Its 12MP camera with Deep Fusion captures stunning photos and 4K video. A 3000mAh battery supports 20W charging. iOS 18 ensures longevity. With 5G, IP67, and Touch ID, it’s ideal for users wanting a small, powerful iPhone at a budget price.",
+    "price": 33976,
+    "category": "smartphone",
+    "image": "https://dummyimage.com/600x400/000/fff&text=iPhone+SE+3rd+Gen"
+  },
+  {
+    "id": 21,
+    "name": "Sony WH-1000XM4",
+    "description": "Sony WH-1000XM4 headphones deliver industry-leading noise cancellation with 40mm drivers for rich sound. Enjoy 30 hours of battery life with quick charging (10 minutes for 5 hours). Bluetooth 5.0 supports multipoint pairing, and DSEE Extreme upscales audio. Touch controls and Speak-to-Chat enhance usability. With plush earpads and a foldable design, they’re perfect for audiophiles, travelers, and remote workers seeking immersive listening.",
+    "price": 16317,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Sony+WH-1000XM4"
+  },
+  {
+    "id": 22,
+    "name": "Bose QuietComfort 45",
+    "description": "Bose QuietComfort 45 headphones offer world-class noise cancellation with TriPort acoustic architecture for balanced sound. Enjoy 24 hours of battery life with USB-C charging. Bluetooth 5.1 ensures stable connections, and adjustable EQ lets you customize audio. Soft ear cushions and a lightweight design provide all-day comfort. Ideal for commuters and professionals needing distraction-free focus or high-quality calls in noisy environments.",
+    "price": 41998,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Bose+QuietComfort+45"
+  },
+  {
+    "id": 23,
+    "name": "Sennheiser HD 450BT",
+    "description": "Sennheiser HD 450BT headphones combine active noise cancellation with 30 hours of battery life. 40mm drivers deliver deep bass and clear highs, with aptX Low Latency for sync. Bluetooth 5.0 and USB-C charging ensure reliability. The Sennheiser Smart Control app offers EQ customization. Foldable and durable, they’re great for music lovers and travelers seeking premium audio on a budget.",
+    "price": 21768,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Sennheiser+HD+450BT"
+  },
+  {
+    "id": 24,
+    "name": "JBL Live 660NC",
+    "description": "JBL Live 660NC headphones feature adaptive noise cancellation and JBL Signature Sound with 40mm drivers. Enjoy 50 hours of playback (ANC off) and fast charging (10 minutes for 4 hours). Bluetooth 5.0 supports multipoint pairing. Voice assistant integration and touch controls enhance usability. With a comfortable headband, they’re ideal for long listening sessions, workouts, or work-from-home setups.",
+    "price": 41401,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=JBL+Live+660NC"
+  },
+  {
+    "id": 25,
+    "name": "Beats Studio3",
+    "description": "Beats Studio3 headphones deliver immersive sound with active noise cancellation and Apple W1 chip for seamless iOS pairing. Enjoy 22 hours of battery life with Fast Fuel charging (10 minutes for 3 hours). 40mm drivers produce bold bass. Bluetooth Class 1 ensures a strong connection. Stylish and foldable, they’re perfect for fashion-conscious users and music enthusiasts craving powerful audio.",
+    "price": 66893,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Beats+Studio3"
+  },
+  {
+    "id": 26,
+    "name": "Skullcandy Crusher Evo",
+    "description": "Skullcandy Crusher Evo headphones offer Sensory Bass with adjustable sliders for personalized thump. Enjoy 40 hours of battery life and rapid charging (10 minutes for 4 hours). 40mm drivers deliver clear audio, with Tile tracking for lost devices. Bluetooth 5.0 ensures stable pairing. With a foldable design, they’re great for bass lovers and casual listeners on the go.",
+    "price": 30333,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Skullcandy+Crusher+Evo"
+  },
+  {
+    "id": 27,
+    "name": "AKG Y500",
+    "description": "AKG Y500 headphones provide balanced sound with 40mm drivers and 20 hours of battery life. Bluetooth 4.2 supports multipoint pairing, and Ambient Aware lets you hear surroundings. Fast charging offers 1 hour from 5 minutes. On-ear controls simplify playback. Lightweight and stylish, they’re ideal for daily commuters and music fans seeking quality audio in a compact package.",
+    "price": 34929,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=AKG+Y500"
+  },
+  {
+    "id": 28,
+    "name": "Anker Soundcore Life Q30",
+    "description": "Anker Soundcore Life Q30 headphones feature hybrid active noise cancellation and 40mm drivers for rich sound. Enjoy 40 hours of playback (ANC off) and 5 minutes of charging for 4 hours. Bluetooth 5.0 ensures stable connections, with customizable EQ via the Soundcore app. Comfortable and affordable, they’re perfect for budget-conscious users needing noise-free calls and music.",
+    "price": 57888,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Anker+Soundcore+Life+Q30"
+  },
+  {
+    "id": 29,
+    "name": "Marshall Monitor II ANC",
+    "description": "Marshall Monitor II ANC headphones blend iconic style with active noise cancellation and 45mm drivers for dynamic sound. Enjoy 30 hours of battery life (ANC on) and USB-C charging. Bluetooth 5.0 supports aptX for low-latency audio. Customizable EQ via the Marshall app enhances versatility. Foldable and rugged, they’re ideal for rock fans and travelers seeking premium audio.",
+    "price": 31832,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Marshall+Monitor+II+ANC"
+  },
+  {
+    "id": 30,
+    "name": "Philips PH805",
+    "description": "Philips PH805 headphones offer active noise cancellation with 40mm drivers for clear audio. Enjoy 30 hours of battery life and fast charging (15 minutes for 6 hours). Bluetooth 5.0 supports high-quality codecs like aptX. Touch controls and a foldable design enhance portability. Sleek and comfortable, they’re great for professionals and casual listeners seeking value and performance.",
+    "price": 54239,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Philips+PH805"
+  },
+  {
+    "id": 31,
+    "name": "Boat Nirvanaa 751 ANC",
+    "description": "Boat Nirvanaa 751 ANC headphones feature hybrid noise cancellation and 40mm drivers for immersive sound. Enjoy 65 hours of battery life (ANC off) and ASAP charging (10 minutes for 10 hours). Bluetooth 5.0 ensures stable pairing. With IPX5 water resistance and ergonomic design, they’re ideal for budget users, gym-goers, and long-distance travelers needing reliable audio.",
+    "price": 18476,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Boat+Nirvanaa+751+ANC"
+  },
+  {
+    "id": 32,
+    "name": "Noise Defy",
+    "description": "Noise Defy headphones deliver active noise cancellation with 40mm drivers for deep bass. Enjoy 35 hours of battery life and fast charging via USB-C. Bluetooth 5.2 supports dual pairing, with low-latency mode for gaming. The NoiseFit app offers EQ customization. Lightweight and durable, they’re perfect for students and casual listeners seeking affordable, high-quality audio.",
+    "price": 70628,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Noise+Defy"
+  },
+  {
+    "id": 33,
+    "name": "Zebronics Zeb-Rush",
+    "description": "Zebronics Zeb-Rush headphones offer 40mm drivers for punchy bass and 20 hours of battery life. Bluetooth 5.0 ensures seamless connectivity, with voice assistant support. A 3.5mm jack provides wired options. Foldable and budget-friendly, they’re ideal for young users, gamers, and music lovers looking for vibrant sound and flashy RGB lighting at a low cost.",
+    "price": 39657,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Zebronics+Zeb-Rush"
+  },
+  {
+    "id": 34,
+    "name": "Boult Audio ProBass",
+    "description": "Boult Audio ProBass headphones deliver 40mm drivers for extra bass and 20 hours of battery life. Bluetooth 5.0 supports quick pairing, with IPX5 water resistance for workouts. Fast charging offers 2 hours from 10 minutes. Comfortable earpads make them ideal for budget-conscious users, fitness enthusiasts, and students seeking reliable wireless audio for daily use.",
+    "price": 9465,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Boult+Audio+ProBass"
+  },
+  {
+    "id": 35,
+    "name": "Fire-Boltt Blast 1400",
+    "description": "Fire-Boltt Blast 1400 headphones feature 40mm drivers for thumping bass and 25 hours of battery life. Bluetooth 5.0 ensures stable connections, with voice assistant compatibility. Fast charging provides 3 hours from 10 minutes. With IPX5 splash resistance, they’re great for gym-goers, budget buyers, and casual listeners seeking bold sound and vibrant design.",
+    "price": 11912,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Fire-Boltt+Blast+1400"
+  },
+  {
+    "id": 36,
+    "name": "PTron Studio Classic",
+    "description": "PTron Studio Classic headphones offer 40mm drivers for clear audio and 15 hours of battery life. Bluetooth 5.0 supports reliable pairing, with a 3.5mm jack for wired use. Fast charging gives 2 hours from 10 minutes. Lightweight and affordable, they’re ideal for students, commuters, and budget users seeking decent sound for music and calls.",
+    "price": 76562,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=PTron+Studio+Classic"
+  },
+  {
+    "id": 37,
+    "name": "Crossbeats Revolt",
+    "description": "Crossbeats Revolt headphones deliver 40mm drivers for balanced sound and 30 hours of battery life. Bluetooth 5.1 supports low-latency gaming mode. Fast charging offers 3 hours from 10 minutes. With IPX5 water resistance and ergonomic design, they’re perfect for fitness buffs, gamers, and music lovers seeking versatile, budget-friendly wireless audio.",
+    "price": 38266,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Crossbeats+Revolt"
+  },
+  {
+    "id": 38,
+    "name": "Leaf Bass Wireless",
+    "description": "Leaf Bass Wireless headphones feature 40mm drivers for deep bass and 15 hours of battery life. Bluetooth 5.0 ensures stable connectivity, with a 3.5mm jack for wired options. Fast charging provides 2 hours from 10 minutes. Affordable and durable, they’re great for young users and budget buyers seeking bass-heavy audio for music and movies.",
+    "price": 52766,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Leaf+Bass+Wireless"
+  },
+  {
+    "id": 39,
+    "name": "Infinity Glide 510",
+    "description": "Infinity Glide 510 headphones by JBL offer 36 hours of battery life and 40mm drivers for JBL Pure Bass. Bluetooth 5.0 supports dual pairing, with quick charging (10 minutes for 2 hours). Voice assistant integration enhances usability. Lightweight and foldable, they’re ideal for budget users, students, and commuters seeking reliable wireless audio with strong bass.",
+    "price": 3480,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Infinity+Glide+510"
+  },
+  {
+    "id": 40,
+    "name": "Cosmic Byte Equinox Europa",
+    "description": "Cosmic Byte Equinox Europa headphones are gaming-focused with 50mm drivers for immersive sound and RGB lighting. Enjoy 20 hours of battery life via Bluetooth 5.0 or wired use. A detachable mic ensures clear voice chats. With a lightweight build, they’re perfect for gamers and streamers seeking budget-friendly audio with vibrant aesthetics and long sessions.",
+    "price": 70356,
+    "category": "headphones",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Cosmic+Byte+Equinox+Europa"
+  },
+  {
+    "id": 41,
+    "name": "Dell Inspiron 15",
+    "description": "Dell Inspiron 15 (2025) features a 15.6-inch FHD display and Intel Core i5-13th Gen for smooth multitasking. With 16GB RAM, 512GB SSD, and Intel Iris Xe graphics, it handles work and light gaming. Enjoy 10 hours of battery life and Windows 11 Pro. Ports include USB-C and HDMI. Ideal for students, professionals, and home users needing reliable performance.",
+    "price": 17883,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Dell+Inspiron+15"
+  },
+  {
+    "id": 42,
+    "name": "HP Pavilion x360",
+    "description": "HP Pavilion x360 is a versatile 2-in-1 with a 14-inch FHD touchscreen and Intel Core i7-13th Gen. With 16GB RAM, 1TB SSD, and Intel Iris Xe graphics, it excels in productivity and creativity. Enjoy 9 hours of battery life and Windows 11 Home. Its 360-degree hinge and stylus support make it ideal for artists, students, and professionals.",
+    "price": 64455,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=HP+Pavilion+x360"
+  },
+  {
+    "id": 43,
+    "name": "Lenovo IdeaPad Slim 5",
+    "description": "Lenovo IdeaPad Slim 5 offers a 15.6-inch FHD display and AMD Ryzen 7 7730U for efficient performance. With 16GB RAM, 512GB SSD, and Radeon graphics, it’s great for work and media. Enjoy 11 hours of battery life and Windows 11 Home. Its slim design and backlit keyboard suit students and remote workers needing portability.",
+    "price": 2394,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Lenovo+IdeaPad+Slim+5"
+  },
+  {
+    "id": 44,
+    "name": "Asus Vivobook S15",
+    "description": "Asus Vivobook S15 boasts a 15.6-inch OLED display and Intel Core i5-13th Gen for vibrant visuals. With 8GB RAM, 512GB SSD, and Intel UHD graphics, it’s ideal for everyday tasks. Enjoy 8 hours of battery life and Windows 11 Home. Its sleek design and fast Wi-Fi 6E make it perfect for students and creators.",
+    "price": 1550,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Asus+Vivobook+S15"
+  },
+  {
+    "id": 45,
+    "name": "Acer Aspire 7",
+    "description": "Acer Aspire 7 features a 15.6-inch FHD display and AMD Ryzen 5 5625U for solid performance. With 16GB RAM, 512GB SSD, and NVIDIA GTX 1650, it handles gaming and editing. Enjoy 7 hours of battery life and Windows 11 Home. Its robust build suits gamers and creators on a budget.",
+    "price": 47252,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Acer+Aspire+7"
+  },
+  {
+    "id": 46,
+    "name": "Apple MacBook Air M2",
+    "description": "Apple MacBook Air M2 (2025) features a 13.6-inch Liquid Retina display and M2 chip with 8-core GPU. With 16GB RAM, 512GB SSD, and macOS Ventura, it excels in editing and multitasking. Enjoy 18 hours of battery life. Its fanless design and MagSafe charging make it ideal for professionals and creators seeking portability.",
+    "price": 71687,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Apple+MacBook+Air+M2"
+  },
+  {
+    "id": 47,
+    "name": "MSI Modern 14",
+    "description": "MSI Modern 14 offers a 14-inch FHD display and Intel Core i5-12th Gen for efficient work. With 8GB RAM, 512GB SSD, and Intel Iris Xe graphics, it’s great for productivity. Enjoy 9 hours of battery life and Windows 11 Home. Its lightweight build suits students and professionals needing a portable laptop.",
+    "price": 21013,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=MSI+Modern+14"
+  },
+  {
+    "id": 48,
+    "name": "Samsung Galaxy Book3",
+    "description": "Samsung Galaxy Book3 features a 15.6-inch AMOLED display and Intel Core i7-13th Gen for stunning visuals. With 16GB RAM, 1TB SSD, and Intel Iris Xe graphics, it’s ideal for multitasking. Enjoy 12 hours of battery life and Windows 11 Pro. Seamless Galaxy ecosystem integration suits Samsung users and professionals.",
+    "price": 48829,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Samsung+Galaxy+Book3"
+  },
+  {
+    "id": 49,
+    "name": "Microsoft Surface Laptop 5",
+    "description": "Microsoft Surface Laptop 5 boasts a 13.5-inch PixelSense touchscreen and Intel Core i7-12th Gen. With 16GB RAM, 512GB SSD, and Intel Iris Xe graphics, it excels in productivity. Enjoy 17 hours of battery life and Windows 11 Pro. Its premium design and Thunderbolt 4 suit creators and professionals.",
+    "price": 77893,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Microsoft+Surface+Laptop+5"
+  },
+  {
+    "id": 50,
+    "name": "LG Gram 16",
+    "description": "LG Gram 16 features a 16-inch WQXGA display and Intel Core i7-12th Gen for crisp visuals. With 16GB RAM, 1TB SSD, and Intel Iris Xe graphics, it’s ultra-light at 1.19kg. Enjoy 20 hours of battery life and Windows 11 Home. Ideal for travelers and professionals needing portability.",
+    "price": 24192,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=LG+Gram+16"
+  },
+  {
+    "id": 51,
+    "name": "Honor MagicBook X14",
+    "description": "Honor MagicBook X14 offers a 14-inch FHD display and Intel Core i5-11th Gen for efficient performance. With 8GB RAM, 512GB SSD, and Intel UHD graphics, it’s great for work. Enjoy 10 hours of battery life and Windows 11 Home. Its slim design suits students and budget-conscious professionals.",
+    "price": 43000,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Honor+MagicBook+X14"
+  },
+  {
+    "id": 52,
+    "name": "Avita Liber V",
+    "description": "Avita Liber V features a 14-inch FHD display and AMD Ryzen 5 4500U for solid performance. With 8GB RAM, 256GB SSD, and Radeon graphics, it’s ideal for daily tasks. Enjoy 8 hours of battery life and Windows 11 Home. Its vibrant colors and lightweight build suit students and creatives.",
+    "price": 4095,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Avita+Liber+V"
+  },
+  {
+    "id": 53,
+    "name": "Xiaomi Notebook Pro 120G",
+    "description": "Xiaomi Notebook Pro 120G boasts a 14-inch 2.5K AMOLED display and Intel Core i7-12th Gen. With 16GB RAM, 512GB SSD, and Intel Iris Xe graphics, it excels in editing. Enjoy 12 hours of battery life and Windows 11 Home. Its premium build suits creators and professionals.",
+    "price": 72151,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Xiaomi+Notebook+Pro+120G"
+  },
+  {
+    "id": 54,
+    "name": "Infinix INBook X2 Plus",
+    "description": "Infinix INBook X2 Plus features a 15.6-inch FHD display and Intel Core i5-11th Gen. With 8GB RAM, 512GB SSD, and Intel UHD graphics, it’s great for multitasking. Enjoy 10 hours of battery life and Windows 11 Home. Its sleek design and budget price suit students and home users.",
+    "price": 52751,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Infinix+INBook+X2+Plus"
+  },
+  {
+    "id": 55,
+    "name": "Fujitsu UH-X",
+    "description": "Fujitsu UH-X offers a 13.3-inch FHD display and Intel Core i5-12th Gen, weighing just 878g. With 16GB RAM, 512GB SSD, and Intel Iris Xe graphics, it’s ideal for portability. Enjoy 11 hours of battery life and Windows 11 Pro. Perfect for business travelers and remote workers.",
+    "price": 25409,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Fujitsu+UH-X"
+  },
+  {
+    "id": 56,
+    "name": "Vaio SE14",
+    "description": "Vaio SE14 features a 14-inch FHD display and Intel Core i5-11th Gen for reliable performance. With 8GB RAM, 512GB SSD, and Intel UHD graphics, it’s great for work. Enjoy 8 hours of battery life and Windows 11 Home. Its premium carbon-fiber build suits professionals and style-conscious users.",
+    "price": 22036,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Vaio+SE14"
+  },
+  {
+    "id": 57,
+    "name": "HP Victus 16",
+    "description": "HP Victus 16 is a gaming laptop with a 16.1-inch FHD 144Hz display and AMD Ryzen 7 6800H. With 16GB RAM, 512GB SSD, and NVIDIA RTX 3050Ti, it handles AAA titles. Enjoy 6 hours of battery life and Windows 11 Home. Ideal for gamers and content creators.",
+    "price": 70318,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=HP+Victus+16"
+  },
+  {
+    "id": 58,
+    "name": "Asus ROG Strix G17",
+    "description": "Asus ROG Strix G17 boasts a 17.3-inch QHD 240Hz display and AMD Ryzen 9 6900HX. With 32GB RAM, 1TB SSD, and NVIDIA RTX 3070, it’s a gaming powerhouse. Enjoy 5 hours of battery life and Windows 11 Home. RGB lighting and advanced cooling suit hardcore gamers and streamers.",
+    "price": 70650,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Asus+ROG+Strix+G17"
+  },
+  {
+    "id": 59,
+    "name": "Acer Nitro 5",
+    "description": "Acer Nitro 5 features a 15.6-inch FHD 144Hz display and Intel Core i5-12th Gen. With 16GB RAM, 512GB SSD, and NVIDIA RTX 3050, it’s great for gaming. Enjoy 6 hours of battery life and Windows 11 Home. Its bold design and RGB keyboard suit budget gamers.",
+    "price": 12403,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Acer+Nitro+5"
+  },
+  {
+    "id": 60,
+    "name": "Dell XPS 13",
+    "description": "Dell XPS 13 (2025) offers a 13.4-inch 4K OLED touchscreen and Intel Core i7-13th Gen. With 16GB RAM, 1TB SSD, and Intel Iris Xe graphics, it’s a premium ultrabook. Enjoy 12 hours of battery life and Windows 11 Pro. Its sleek design suits creators and executives.",
+    "price": 70499,
+    "category": "laptop",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Dell+XPS+13"
+  },
+  {
+    "id": 61,
+    "name": "Apple Watch Series 8",
+    "description": "Apple Watch Series 8 features a 1.9-inch Retina display and S8 chip for smooth performance. With advanced health tracking (ECG, SpO2, temperature), it’s ideal for fitness and wellness. Enjoy 18 hours of battery life and 5ATM water resistance. watchOS 9 enhances customization. Perfect for iPhone users seeking a premium smartwatch with seamless ecosystem integration.",
+    "price": 46961,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Apple+Watch+Series+8"
+  },
+  {
+    "id": 62,
+    "name": "Samsung Galaxy Watch 5",
+    "description": "Samsung Galaxy Watch 5 boasts a 1.4-inch Super AMOLED display and Exynos W920 chip. With heart rate, SpO2, and sleep tracking, it’s fitness-focused. Enjoy 40 hours of battery life and 10W wireless charging. Wear OS 4 offers app versatility. Ideal for Android users seeking a stylish, durable smartwatch.",
+    "price": 34408,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Samsung+Galaxy+Watch+5"
+  },
+  {
+    "id": 63,
+    "name": "Fitbit Versa 4",
+    "description": "Fitbit Versa 4 features a 1.58-inch AMOLED display and 6-day battery life. With heart rate, SpO2, and stress tracking, it’s perfect for health enthusiasts. GPS and 50m water resistance support workouts. Fitbit OS offers intuitive navigation. Lightweight and affordable, it’s ideal for fitness beginners and casual users.",
+    "price": 18868,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Fitbit+Versa+4"
+  },
+  {
+    "id": 64,
+    "name": "Garmin Venu Sq 2",
+    "description": "Garmin Venu Sq 2 offers a 1.41-inch AMOLED display and 11-day battery life. With GPS, heart rate, and advanced sleep tracking, it’s built for athletes. 5ATM water resistance supports swimming. Garmin Connect provides detailed analytics. Durable and versatile, it’s perfect for fitness buffs and outdoor adventurers.",
+    "price": 73443,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Garmin+Venu+Sq+2"
+  },
+  {
+    "id": 65,
+    "name": "Amazfit GTR 4",
+    "description": "Amazfit GTR 4 features a 1.43-inch AMOLED display and 14-day battery life. With GPS, heart rate, and 150+ sports modes, it’s fitness-focused. 5ATM water resistance supports swimming. Zepp OS 2.0 offers smooth navigation. Stylish and affordable, it’s ideal for active users seeking long-lasting performance.",
+    "price": 53044,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Amazfit+GTR+4"
+  },
+  {
+    "id": 66,
+    "name": "Fire-Boltt Ring 3",
+    "description": "Fire-Boltt Ring 3 offers a 1.8-inch HD display and 7-day battery life. With SpO2, heart rate, and sleep tracking, it’s health-focused. Bluetooth calling and IP67 water resistance add versatility. 118 sports modes support workouts. Budget-friendly, it’s ideal for young users and fitness beginners.",
+    "price": 67784,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Fire-Boltt+Ring+3"
+  },
+  {
+    "id": 67,
+    "name": "Noise ColorFit Pro 4",
+    "description": "Noise ColorFit Pro 4 features a 1.85-inch AMOLED display and 7-day battery life. With heart rate, SpO2, and stress tracking, it’s wellness-focused. Bluetooth calling and IP68 water resistance enhance usability. 150+ watch faces offer customization. Affordable, it’s great for budget users and fitness enthusiasts.",
+    "price": 38396,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Noise+ColorFit+Pro+4"
+  },
+  {
+    "id": 68,
+    "name": "boAt Xtend",
+    "description": "boAt Xtend offers a 1.69-inch HD display and 7-day battery life. With SpO2, heart rate, and 14 sports modes, it’s fitness-oriented. IP68 water resistance and Alexa integration add functionality. Vibrant design and budget price make it ideal for young users and casual fitness trackers.",
+    "price": 73333,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=boAt+Xtend"
+  },
+  {
+    "id": 69,
+    "name": "Fossil Gen 6",
+    "description": "Fossil Gen 6 features a 1.28-inch AMOLED display and Snapdragon Wear 4100+. With heart rate, SpO2, and GPS, it’s fitness-ready. Enjoy 24 hours of battery life and fast charging. Wear OS 3 supports apps. Stylish and premium, it’s ideal for fashion-conscious users and tech enthusiasts.",
+    "price": 71692,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Fossil+Gen+6"
+  },
+  {
+    "id": 70,
+    "name": "Realme Watch 3 Pro",
+    "description": "Realme Watch 3 Pro offers a 1.78-inch AMOLED display and 10-day battery life. With GPS, heart rate, and SpO2 tracking, it’s fitness-focused. Bluetooth calling and IP68 water resistance add versatility. Realme UI for Watch is intuitive. Affordable, it’s great for budget users and active lifestyles.",
+    "price": 26974,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Realme+Watch+3+Pro"
+  },
+  {
+    "id": 71,
+    "name": "Redmi Watch 2 Lite",
+    "description": "Redmi Watch 2 Lite features a 1.55-inch HD display and 10-day battery life. With GPS, heart rate, and 100+ sports modes, it’s fitness-oriented. 5ATM water resistance supports swimming. MIUI for Watch is user-friendly. Budget-friendly, it’s ideal for beginners and casual fitness trackers.",
+    "price": 49590,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Redmi+Watch+2+Lite"
+  },
+  {
+    "id": 72,
+    "name": "Huawei Watch GT 3",
+    "description": "Huawei Watch GT 3 boasts a 1.43-inch AMOLED display and 14-day battery life. With heart rate, SpO2, and 100+ workout modes, it’s fitness-focused. 5ATM water resistance and GPS support outdoor activities. HarmonyOS ensures smooth operation. Premium and durable, it’s ideal for athletes and professionals.",
+    "price": 16804,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Huawei+Watch+GT+3"
+  },
+  {
+    "id": 73,
+    "name": "Dizo Watch D Plus",
+    "description": "Dizo Watch D Plus offers a 1.85-inch HD display and 14-day battery life. With SpO2, heart rate, and 110+ sports modes, it’s health-oriented. IP68 water resistance adds durability. Realme Link app provides customization. Budget-friendly, it’s great for young users and fitness beginners.",
+    "price": 67663,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Dizo+Watch+D+Plus"
+  },
+  {
+    "id": 74,
+    "name": "Titan Smart Pro",
+    "description": "Titan Smart Pro features a 1.39-inch AMOLED display and 14-day battery life. With heart rate, SpO2, and stress tracking, it’s wellness-focused. IP68 water resistance and 10 sports modes support workouts. Titan Smart app offers customization. Stylish, it’s ideal for professionals and casual users.",
+    "price": 3082,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Titan+Smart+Pro"
+  },
+  {
+    "id": 75,
+    "name": "Crossbeats Ignite Atlas",
+    "description": "Crossbeats Ignite Atlas offers a 1.85-inch AMOLED display and 7-day battery life. With GPS, heart rate, and SpO2 tracking, it’s fitness-ready. Bluetooth calling and IP68 water resistance add functionality. Vibrant design and budget price suit young users and active lifestyles seeking versatility.",
+    "price": 56308,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Crossbeats+Ignite+Atlas"
+  },
+  {
+    "id": 76,
+    "name": "Pebble Cosmos Luxe",
+    "description": "Pebble Cosmos Luxe features a 1.36-inch AMOLED display and 7-day battery life. With heart rate, SpO2, and Bluetooth calling, it’s feature-packed. IP67 water resistance supports daily use. Premium design and 100+ watch faces suit style-conscious users. Ideal for professionals and casual fitness trackers.",
+    "price": 65657,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Pebble+Cosmos+Luxe"
+  },
+  {
+    "id": 77,
+    "name": "Noise Pulse Go",
+    "description": "Noise Pulse Go offers a 1.69-inch HD display and 7-day battery life. With SpO2, heart rate, and 130+ sports modes, it’s fitness-oriented. IP68 water resistance and Bluetooth calling add versatility. NoiseFit app provides customization. Budget-friendly, it’s great for young users and workout enthusiasts.",
+    "price": 72602,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Noise+Pulse+Go"
+  },
+  {
+    "id": 78,
+    "name": "boAt Wave Call",
+    "description": "boAt Wave Call features a 1.69-inch HD display and 7-day battery life. With heart rate, SpO2, and Bluetooth calling, it’s practical for daily use. IP68 water resistance and 150+ watch faces offer style. Budget-friendly, it’s ideal for students and casual users seeking a functional smartwatch.",
+    "price": 40265,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=boAt+Wave+Call"
+  },
+  {
+    "id": 79,
+    "name": "OnePlus Nord Watch",
+    "description": "OnePlus Nord Watch offers a 1.78-inch AMOLED display and 10-day battery life. With heart rate, SpO2, and 105 sports modes, it’s fitness-focused. IP68 water resistance and Bluetooth calling add functionality. OxygenOS Watch is smooth. Affordable, it’s ideal for OnePlus fans and active users.",
+    "price": 68803,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=OnePlus+Nord+Watch"
+  },
+  {
+    "id": 80,
+    "name": "Zebronics Zeb-Fit2220CH",
+    "description": "Zebronics Zeb-Fit2220CH features a 1.53-inch HD display and 7-day battery life. With SpO2, heart rate, and 100+ sports modes, it’s fitness-ready. IP68 water resistance supports daily use. Vibrant design and budget price make it ideal for young users and casual fitness trackers.",
+    "price": 52383,
+    "category": "smartwatch",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Zebronics+Zeb-Fit2220CH"
+  },
+  {
+    "id": 81,
+    "name": "JBL Flip 6",
+    "description": "JBL Flip 6 delivers powerful JBL Original Pro Sound with a 20W output and 12 hours of battery life. IP67 water and dust resistance make it poolside-ready. Bluetooth 5.1 ensures stable pairing. PartyBoost connects multiple speakers. Compact and rugged, it’s perfect for outdoor adventures and parties.",
+    "price": 31443,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=JBL+Flip+6"
+  },
+  {
+    "id": 82,
+    "name": "boAt Stone 1200",
+    "description": "boAt Stone 1200 offers 14W RMS sound with deep bass and 9 hours of battery life. IPX7 water resistance suits outdoor use. Bluetooth 5.0 and TWS pairing deliver stereo sound. RGB lighting adds flair. Rugged and portable, it’s ideal for picnics, camping, and budget-conscious partygoers.",
+    "price": 9815,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=boAt+Stone+1200"
+  },
+  {
+    "id": 83,
+    "name": "Sony SRS-XB13",
+    "description": "Sony SRS-XB13 delivers Extra Bass with a 5W output and 16 hours of battery life. IP67 water and dust resistance make it adventure-ready. Bluetooth 4.2 supports stable pairing, with a built-in mic for calls. Compact and durable, it’s perfect for hikes, beach trips, and casual listening.",
+    "price": 75002,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Sony+SRS-XB13"
+  },
+  {
+    "id": 84,
+    "name": "Marshall Emberton",
+    "description": "Marshall Emberton offers 20W of True Stereophonic sound and 20 hours of battery life. IPX7 water resistance ensures durability. Bluetooth 5.0 provides a 30ft range. Its iconic retro design and compact size make it ideal for music lovers seeking premium audio for home or travel.",
+    "price": 77369,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Marshall+Emberton"
+  },
+  {
+    "id": 85,
+    "name": "Mi Portable Bluetooth Speaker",
+    "description": "Mi Portable Bluetooth Speaker delivers 16W sound with dual EQ modes and 13 hours of battery life. IPX7 water resistance suits outdoor use. Bluetooth 5.0 ensures stable pairing, with TWS for stereo. Compact and affordable, it’s great for students, travelers, and casual listeners.",
+    "price": 8604,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Mi+Portable+Bluetooth+Speaker"
+  },
+  {
+    "id": 86,
+    "name": "Philips BT6620",
+    "description": "Philips BT6620 offers 20W sound with deep bass and 10 hours of battery life. IPX5 splash resistance makes it pool-friendly. Bluetooth 4.2 supports NFC pairing. Built-in mic enables hands-free calls. Sleek and portable, it’s ideal for home entertainment and small gatherings.",
+    "price": 15510,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Philips+BT6620"
+  },
+  {
+    "id": 87,
+    "name": "Zebronics Zeb-Rock",
+    "description": "Zebronics Zeb-Rock delivers 10W RMS sound with 10 hours of battery life. IPX5 water resistance suits outdoor use. Bluetooth 5.0, FM radio, and USB playback add versatility. RGB lighting enhances aesthetics. Budget-friendly, it’s great for young users and casual parties.",
+    "price": 7567,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Zebronics+Zeb-Rock"
+  },
+  {
+    "id": 88,
+    "name": "Infinity Fuze 100",
+    "description": "Infinity Fuze 100 by JBL offers 10W stereo sound with deep bass and 9 hours of battery life. IPX7 water resistance makes it pool-ready. Bluetooth 4.2 supports dual pairing. TWS mode creates stereo. Compact and affordable, it’s ideal for students and outdoor enthusiasts.",
+    "price": 20011,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Infinity+Fuze+100"
+  },
+  {
+    "id": 89,
+    "name": "Anker Soundcore 2",
+    "description": "Anker Soundcore 2 delivers 12W stereo sound with BassUp and 24 hours of battery life. IPX7 water resistance suits showers or beaches. Bluetooth 5.0 ensures a 66ft range. Built-in mic supports calls. Durable and portable, it’s perfect for travelers and casual listeners.",
+    "price": "70095",
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Anker+Soundcore+2"
+  },
+  {
+    "id": 90,
+    "name": "Portronics SoundDrum",
+    "description": "Portronics SoundDrum offers 10W sound with 7 hours of battery life and IPX6 water resistance, ideal for outdoor use. Bluetooth 5.0 supports stable pairing, with FM and USB playback options. TWS mode delivers stereo sound. Compact and rugged with a built-in mic, it’s great for camping, picnics, and budget-conscious users seeking portable audio.",
+    "price": 551,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Portronics+SoundDrum"
+  },
+  {
+    "id": 91,
+    "name": "Noise Zest 5W",
+    "description": "Noise Zest 5W offers 5W clear sound with 8 hours of battery life and IPX7 water resistance. Bluetooth 5.2 ensures quick pairing. TWS pairing creates stereo sound. With a built-in design mic, it’s ideal for budget students buyers, beachgoers, and casual listeners seeking compact, affordable for audio daily for use.",
+    "price": 248,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/000&text=fff&text=Noise+Zest+5W"
+  },
+  {
+    "id": 92,
+    "name": "F&D W19",
+    "description": "F&D W19 delivers 12W sound with deep bass and 6 hours of battery life. IPX4 splash resistance suits casual outdoor use. Bluetooth 4.2 supports reliable pairing, with USB and TF card playback. Built-in mic enables calls. Affordable and versatile, it’s great for good home entertainment and small gatherings.",
+    "price": 62030,
+    "category": "speaker",
+    "image": "id https://example.com/fdw19.jpg&text=F&D+Wx+19"
+  },
+  {
+    "id": 93,
+    "name": "Mivi Roam 2",
+    "description": "Mivi Roam 2 offers 5W sound with deep bass and 24 hours of battery life. IPX7 water resistance makes it adventure-ready. Bluetooth 5.0 ensures stable pairing, with TWS stereo mode for stereo. sound. Compact and durable with a built-in mic, it’s ideal for great travelers, for hikers, outdoor and enthusiasts budget seeking buyers. robust audio.",
+    "price": 27513,
+    "category": "speaker",
+    "image": "https://dummyimage.com/m600x400/000/fffm600x400/000/ffff&text=Mivi+Roam+2"
+  },
+  {
+    "id": 94,
+    "name": "Amazon Echo Dot (5(5th Gen)",
+    "description": "Amazon Echo Dot (5th Gen) delivers improved 1.7W sound with Alexa for music, news, and smart home control. Wi-Fi and Bluetooth connectivity ensure versatility. Motion sensors enable tap controls. With 15 hours of battery life (plugged), it’s ideal for smart home spaces setups, kitchens, or and bedrooms. Compact, it’s great for users seeking a voice-activated, budget-friendly speaker with smart features.",
+    "price": 42517,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Amazon+Echo+Dot+(5th+Gen)"
+  },
+  {
+    "id": 95,
+    "name": "Blaupunkt BT52",
+    "description": "Blaupunkt BT52 offers 10W stereo sound with 7 hours of battery life and IPX5 splash resistance. Bluetooth 5.0 supports TWS pairing for stereo. Built-in mic and FM radio add functionality for calls. Rugged, and stylish it’s portable, great it’s for ideal for beach trips, picnics, and users seeking budget buyers looking for classic audio quality.",
+    "price": 43016,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=BTlaupunkt+BT52"
+  },
+  {
+    "id": 96,
+    "name": "Realme Cobble",
+    "description": "Realme Cobble delivers 5W sound with deep bass and 9 hours of battery life. IPX5 water resistance makes it splash-proof for outdoor use. Bluetooth 5.0 ensures stable pairing, with TWS mode for stereo sound. A built-in mic supports hands-free calls. Compact and stylish, it’s ideal for students, travelers, and budget-conscious users seeking portable audio for picnics, workouts, or casual listening.",
+    "price": 25558,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Realme+Cobble"
+  },
+  {
+    "id": 97,
+    "name": "Artis BT90",
+    "description": "Artis BT90 offers 10W RMS sound with vibrant bass and 8 hours of battery life. IPX5 splash resistance suits casual outdoor settings. Bluetooth 5.0 supports quick pairing, with FM radio and USB playback for versatility. A built-in mic enables clear calls. Durable and affordable, it’s perfect for young users, small gatherings, or budget buyers seeking reliable audio with a modern design.",
+    "price": 70519,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Artis+BT90"
+  },
+  {
+    "id": 98,
+    "name": "Tribit StormBox Micro",
+    "description": "Tribit StormBox Micro delivers 9W sound with powerful bass and 8 hours of battery life. IP67 water and dust resistance make it adventure-ready. Bluetooth 5.0 ensures a 100ft range, with TWS for stereo pairing. Its strap design enhances portability. Compact and rugged, it’s ideal for hikers, campers, and outdoor enthusiasts seeking high-quality audio in a small package.",
+    "price": 24885,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Tribit+StormBox+Micro"
+  },
+  {
+    "id": 99,
+    "name": "Claw Mini Soundbar",
+    "description": "Claw Mini Soundbar provides 10W stereo sound with 6 hours of battery life. Bluetooth 5.0 ensures seamless connectivity, with AUX and USB inputs for versatility. Its sleek design fits desktops or TVs. A built-in mic supports calls. Affordable and compact, it’s great for students, home offices, or budget users seeking enhanced audio for movies and music.",
+    "price": 19554,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Claw+Mini+Soundbar"
+  },
+  {
+    "id": 100,
+    "name": "Lenovo 700 Bluetooth Speaker",
+    "description": "Lenovo 700 Bluetooth Speaker offers 10W sound with crisp highs and 8 hours of battery life. IPX6 water resistance suits outdoor use. Bluetooth 5.0 provides a stable 33ft range, with TWS for stereo. Its sleek, portable design includes a built-in mic. Ideal for professionals, travelers, or casual listeners seeking premium audio at a budget price.",
+    "price": 58278,
+    "category": "speaker",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Lenovo+700+Bluetooth+Speaker"
+  },
+  {
+    "id": 101,
+    "name": "Samsung Galaxy Tab S9",
+    "description": "Samsung Galaxy Tab S9 features an 11-inch Dynamic AMOLED 2X display and Snapdragon 8 Gen 2 for stunning visuals and performance. With 12GB RAM, 256GB storage, and S Pen support, it excels in productivity and creativity. Enjoy 15 hours of battery life and Android 14 with One UI 6. 5G and IP68 rating make it ideal for professionals and artists.",
+    "price": 68208,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Samsung+Galaxy+Tab+S9"
+  },
+  {
+    "id": 102,
+    "name": "Apple iPad 10th Gen",
+    "description": "Apple iPad 10th Gen (2025) boasts a 10.9-inch Liquid Retina display and A14 Bionic chip for smooth multitasking. With 4GB RAM, 64GB storage, and Apple Pencil support, it’s great for students and creators. Enjoy 10 hours of battery life and iPadOS 18. USB-C and 5G connectivity make it versatile for work, study, or entertainment on the go.",
+    "price": 12908,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Apple+iPad+10th+Gen"
+  },
+  {
+    "id": 103,
+    "name": "Lenovo Tab P11 Pro",
+    "description": "Lenovo Tab P11 Pro features an 11.2-inch OLED display and Snapdragon 730G for vibrant media and productivity. With 6GB RAM, 128GB storage, and stylus support, it’s ideal for note-taking. Enjoy 15 hours of battery life and Android 14. Quad speakers with Dolby Atmos and 5G make it perfect for professionals and entertainment enthusiasts.",
+    "price": 31641,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Lenovo+Tab+P11+Pro"
+  },
+  {
+    "id": 104,
+    "name": "Realme Pad X",
+    "description": "Realme Pad X offers a 10.95-inch 2K display and Snapdragon 695 for smooth performance. With 6GB RAM, 128GB storage, and 8340mAh battery with 33W fast charging, it lasts 12 hours. Android 14 with Realme UI for Pad supports multitasking. 5G and Dolby Atmos make it great for students and media consumers on a budget.",
+    "price": 25327,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Realme+Pad+X"
+  },
+  {
+    "id": 105,
+    "name": "Xiaomi Pad 6",
+    "description": "Xiaomi Pad 6 boasts an 11-inch 2.8K display at 144Hz and Snapdragon 870 for seamless performance. With 8GB RAM, 256GB storage, and 8600mAh battery with 67W fast charging, it offers 14 hours of use. Android 14 with MIUI Pad supports productivity. Four speakers and 5G make it ideal for creators and professionals.",
+    "price": 71591,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Xiaomi+Pad+6"
+  },
+  {
+    "id": 106,
+    "name": "Huawei MatePad 11",
+    "description": "Huawei MatePad 11 features an 11-inch 2.5K display at 120Hz and Snapdragon 865. With 6GB RAM, 128GB storage, and 7250mAh battery with 22.5W charging, it lasts 12 hours. HarmonyOS 3 supports multitasking and stylus use. Wi-Fi 6 and quad speakers make it great for students and creatives seeking a versatile tablet.",
+    "price": 30691,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Huawei+MatePad+11"
+  },
+  {
+    "id": 107,
+    "name": "Nokia T21",
+    "description": "Nokia T21 offers a 10.4-inch 2K display and Unisoc T612 for reliable performance. With 4GB RAM, 64GB storage, and 8200mAh battery, it provides 15 hours of use. Android 14 ensures longevity. Stereo speakers and IP52 resistance make it ideal for families, students, or budget users needing a durable tablet for media and study.",
+    "price": 58936,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Nokia+T21"
+  },
+  {
+    "id": 108,
+    "name": "Honor Pad 8",
+    "description": "Honor Pad 8 features a 12-inch 2K display and Snapdragon 680 for smooth visuals. With 6GB RAM, 128GB storage, and 7250mAh battery, it offers 14 hours of battery life. Android 14 with Magic UI supports productivity. Six speakers and a sleek design make it perfect for media consumption and remote work on a budget.",
+    "price": 10776,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Honor+Pad+8"
+  },
+  {
+    "id": 109,
+    "name": "Asus ROG Flow Z13",
+    "description": "Asus ROG Flow Z13 is a gaming tablet with a 13.4-inch WQXGA 120Hz display and Intel Core i9-12th Gen. With 16GB RAM, 1TB SSD, and NVIDIA RTX 3050, it handles AAA games. A 56Wh battery lasts 8 hours. Windows 11 and detachable keyboard make it ideal for gamers and creators.",
+    "price": 6939,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Asus+ROG+Flow+Z13"
+  },
+  {
+    "id": 110,
+    "name": "Alcatel 3T10",
+    "description": "Alcatel 3T10 offers a 10-inch HD display and MediaTek MT8766B for basic tasks. With 3GB RAM, 32GB storage, and 5500mAh battery, it provides 10 hours of use. Android 14 ensures simplicity. Stereo speakers and a budget price make it ideal for kids, seniors, or casual users needing a tablet for media and browsing.",
+    "price": 49358,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Alcatel+3T10"
+  },
+  {
+    "id": 111,
+    "name": "iBall Slide Elan",
+    "description": "iBall Slide Elan features a 10.1-inch HD display and Unisoc SC9863A for everyday use. With 3GB RAM, 32GB storage, and 6000mAh battery, it lasts 12 hours. Android 14 supports light multitasking. Dual speakers and 4G connectivity make it a budget-friendly choice for students and families for media and e-learning.",
+    "price": 25568,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=iBall+Slide+Elan"
+  },
+  {
+    "id": 112,
+    "name": "TCL Tab 10s",
+    "description": "TCL Tab 10s offers a 10.1-inch FHD display and MediaTek MT8768 for smooth streaming. With 4GB RAM, 64GB storage, and 8000mAh battery, it provides 18 hours of use. Android 14 and stylus support enhance productivity. Dual speakers make it great for students and families needing an affordable tablet for study and entertainment.",
+    "price": 20212,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=TCL+Tab+10s"
+  },
+  {
+    "id": 113,
+    "name": "Amazon Fire HD 10",
+    "description": "Amazon Fire HD 10 (2025) features a 10.1-inch FHD display and octa-core processor for streaming and browsing. With 3GB RAM, 32GB storage, and 12 hours of battery life, it’s media-focused. Fire OS 8 integrates Alexa. Durable and budget-friendly, it’s ideal for families, kids, or casual users for entertainment and light productivity.",
+    "price": 50627,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Amazon+Fire+HD+10"
+  },
+  {
+    "id": 114,
+    "name": "Acer One 10 T4",
+    "description": "Acer One 10 T4 offers a 10.1-inch HD display and MediaTek MT8766B for basic tasks. With 3GB RAM, 32GB storage, and 6000mAh battery, it lasts 10 hours. Android 14 supports light apps. Dual speakers and a rugged build make it a budget option for students, kids, or casual users for e-learning and media.",
+    "price": 69068,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Acer+One+10+T4"
+  },
+  {
+    "id": 115,
+    "name": "Lava Magnum XL",
+    "description": "Lava Magnum XL features a 10.1-inch HD display and Unisoc SC9863A for daily use. With 3GB RAM, 32GB storage, and 6100mAh battery, it offers 12 hours of battery life. Android 14 ensures simplicity. Stereo speakers and 4G support make it ideal for budget-conscious users, families needing and a students large for tablet for media and browsing.",
+    "price": 52391,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Lava+Magnum+XL"
+  },
+  {
+    "id": 116,
+    "name": "Swipe Slate 2",
+    "description": "Swipe Slate 2 offers a 10-inch HD display and MediaTek quad-core processor for basic tasks. With 2GB RAM, 32GB storage, and 5000mAh battery, it lasts 8 hours. Android 14 supports simple apps. Dual speakers and a budget price make it suitable for kids, seniors, or casual users for media and light browsing.",
+    "price": 3190,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Swipe+Slate+2"
+  },
+  {
+    "id": 117,
+    "name": "Motorola Tab G70",
+    "description": "Motorola Tab G70 features an 11-inch 2K display and MediaTek Helio G90T for smooth gaming and media. With 4GB RAM, 64GB storage, storage and with 7700mAh battery, it offers 15 hours of use. Android 14 and quad speakers with Dolby Atmos enhance entertainment. 4G and a durable build make it ideal for families and travelers.",
+    "price": 36453,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Motorola+Tab+G70"
+  },
+  {
+    "id": 118,
+    "name": "Zebronics Zeb-Pad",
+    "description": "Zebronics Zeb-Pad offers a 10.1-inch HD display and Unisoc SC9863A for everyday tasks. With 3GB RAM, 32GB storage, and 6000mAh battery, it provides 10 hours of use. Android 14 supports basic apps. Dual speakers and 4G connectivity make it a budget-friendly choice for students and casual users for media and study.",
+    "price": 8069,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Zebronics+Zeb-Pad"
+  },
+  {
+    "id": 119,
+    "name": "Micromax Canvas Tab P701",
+    "description": "Micromax Canvas Tab P701 features a 7-inch HD display and MediaTek quad-core processor for light tasks. With 2GB RAM, 16GB storage, and 3500mAh battery, it lasts 8 hours. Android 14 supports basic apps. Dual speakers and 4G make it a budget option for kids or seniors for media and communication.",
+    "price": 69197,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=Micromax+Canvas+Tab+P701"
+  },
+  {
+    "id": 120,
+    "name": "HTC A100",
+    "description": "HTC A100 offers a 10.1-inch FHD display and Unisoc T618 for smooth browsing and media. With 4GB RAM, 64GB storage, and 7000mAh battery, it provides 12 hours of use. Android 14 supports multitasking. Stereo speakers and 4G connectivity make it ideal for students, families, or budget users needing a reliable tablet for work and entertainment.",
+    "price": 53424,
+    "category": "tablet",
+    "image": "https://dummyimage.com/600x400/000/fff&text=HTC+A100"
   }
 ]
