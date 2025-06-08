@@ -20,6 +20,10 @@ db.init_app(app)
 app.register_blueprint(chat_bp)
 app.register_blueprint(auth_bp)
 
+@app.route("/")
+def index():
+    return {"message": "E-commerce Chatbot API is running!"}
+
 # Create tables before first request
 @app.before_request
 def create_tables():
