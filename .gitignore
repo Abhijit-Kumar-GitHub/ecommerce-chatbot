@@ -55,3 +55,7 @@ pip-delete-this-directory.txt
 # Documentation build artifacts
 docs/_build/
 docs/.doctrees/
+
+
+#db
+backend/instance/*
