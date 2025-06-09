@@ -19,6 +19,7 @@ chat_bp = Blueprint("chat", __name__)
 CHROMA_PERSIST_DIR = "../products/chroma/"
 EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+print("DEBUG API KEY:", repr(OPENROUTER_API_KEY))
 OPENROUTER_MODEL = "deepseek/deepseek-chat"
 JWT_SECRET = os.getenv("JWT_SECRET_KEY")
 
@@ -63,22 +64,14 @@ def token_required(f):
 def chat(current_user_id):
     data = request.get_json()
     user_query = data.get("query", "")
-    session_id = data.get("session_id")
 
     if not user_query:
         return jsonify({"error": "Query not provided"}), 400
 
-    # Use provided session or get latest
-    if session_id:
-        session = ChatSession.query.filter_by(id=session_id, user_id=current_user_id).first()
-        if not session:
-            return jsonify({"error": "Invalid session ID"}), 404
-    else:
-        session = ChatSession.query.filter_by(user_id=current_user_id).order_by(ChatSession.created_at.desc()).first()
-        if not session:
-            session = ChatSession(user_id=current_user_id)
-            db.session.add(session)
-            db.session.commit()
+    # Always create a new session
+    session = ChatSession(user_id=current_user_id)
+    db.session.add(session)
+    db.session.commit()
 
     # Save user message
     user_msg = ChatMessage(
@@ -90,8 +83,14 @@ def chat(current_user_id):
     db.session.add(user_msg)
     db.session.commit()
 
-    # Vector search
-    relevant_docs = vectorstore.similarity_search(user_query, k=4)
+    # Get vectorstore
+    vs = get_vectorstore()
+
+    try:
+        relevant_docs = vs.similarity_search(user_query, k=4)
+    except Exception as e:
+        return jsonify({"error": "Vectorstore error", "details": str(e)}), 500
+
     context = "\n".join([doc.page_content for doc in relevant_docs])
 
     prompt = f"""You are a helpful AI assistant for an electronics e-commerce store.
@@ -139,6 +138,7 @@ AI:"""
 
     except requests.RequestException as e:
         return jsonify({"error": "OpenRouter API failed", "details": str(e)}), 500
+
 
 # ---------------- Reset Chat Session ----------------
 @chat_bp.route("/chat/reset", methods=["POST"])
